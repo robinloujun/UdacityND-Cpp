@@ -314,8 +314,8 @@ long LinuxParser::UpTime(int pid) {
       short count = 0;
       while (linestream >> value) {  
         count++;
-        if (count == 14)
-          return std::stol(value) / sysconf(_SC_CLK_TCK);
+        if (count == 22)
+          return UpTime() - std::stol(value) / sysconf(_SC_CLK_TCK);
       }
     }    
   }

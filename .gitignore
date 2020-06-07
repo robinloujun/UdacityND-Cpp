@@ -566,4 +566,4 @@ TSWLatexianTemp*
 *.xmp
 
 # vscode config
-/.vscode
+.vscode/
